@@ -2,8 +2,16 @@
 
 <h4>Propety Binding - alteraçao de propriedade</h4>
 
-<input [value]="inputType" [value]="inputText" [disabled]="isDisable" />
+<input 
+[type]="inputType" 
+[value]="inputText" 
+[disabled]="isDisable"
+(keyup)="hanbleInputKeyup($event)"  />
+
+<!--(keyup) pegando valor atual de um input -->
+
 <br>
+<!-- event Binding -->
 <button (click)="habilitatInput()">Habilitar</button>
 <button (click)="desabilitarInput()">Desabilitar</button>
 <!-- <button (click)="habilitatInput(true)">Habilitar</button>

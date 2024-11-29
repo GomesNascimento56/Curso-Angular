@@ -29,4 +29,11 @@ export class AppComponent {
   // habilitatInput(habilitar:boolean){
   //   this.isDisable = habilitar;
   // }
+  
+  // (keyup) pegando valor atual de um input
+  hanbleInputKeyup(event:KeyboardEvent){
+  
+    const currentText = (event.target as HTMLInputElement).value;
+    console.log(currentText)
+  }
 }
