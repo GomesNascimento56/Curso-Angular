@@ -29,11 +29,21 @@ export class AppComponent {
   // habilitatInput(habilitar:boolean){
   //   this.isDisable = habilitar;
   // }
-  
+
   // (keyup) pegando valor atual de um input
   hanbleInputKeyup(event:KeyboardEvent){
   
     const currentText = (event.target as HTMLInputElement).value;
     console.log(currentText)
+  }
+  //Atrubit Binding - alteraçao de atributo
+  buttonTitle = 'Titulo do botão';
+
+  buttonDisable = false;
+
+  onButtonClick(){
+    this.inputText="Texto Alteradooo!";
+    this.buttonDisable = !this.buttonDisable
+    
   }
 }

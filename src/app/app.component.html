@@ -10,14 +10,30 @@
 
 <!--(keyup) pegando valor atual de um input -->
 
-<br>
+<br><br>
 <!-- event Binding -->
+
+<h4>Event Binding</h4>
+
 <button (click)="habilitatInput()">Habilitar</button>
 <button (click)="desabilitarInput()">Desabilitar</button>
 <!-- <button (click)="habilitatInput(true)">Habilitar</button>
 <button (click)="habilitatInput(false)">Desabilitar</button> -->
-<br>
+<br><br>
 <button (click)="SenhaInput()">Senha</button>
 <button (click)="TextoInput()">Texto</button>
 
+<h4>Atrubit Binding - alteraçao de atributo</h4>
 
+<button [attr.title]="buttonTitle">Teste</button>
+
+
+
+<!-- por padrão o disable é ativo, se o atributo for TRUE ele desativa se ele
+retornar NULL ele ativa. -->
+<!-- se a propriedade for TRUE ele vai retornar true 
+se  buttonDisable for NULL o atributo [attr.disabled] não vai estar presente e vai ativar o botão -->
+<button [attr.disabled]="buttonDisable ? true : null">Disable</button>
+<br><br>
+<!--alterando estado dos botões-->
+<button (click)="onButtonClick()">Muda Prosp</button>
