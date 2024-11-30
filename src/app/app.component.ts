@@ -46,4 +46,24 @@ export class AppComponent {
     this.buttonDisable = !this.buttonDisable
     
   }
+  widthButton1= '110px';
+  stylesObj = {
+
+    width:'160px',
+    backgroundColor: '#234342',
+    color: '#ffffff',
+  };
+  
+  
+  // updateStyleObjCorrect(){
+
+  //   console.log('updateStyleObjCorrect');
+  // como assim ñ existe?
+  //   this.stylesObj = {
+  //     width: '170px',
+  //     backgroundColor: '#f5cb5c',
+    
+  //  };
+ //}
+
 }

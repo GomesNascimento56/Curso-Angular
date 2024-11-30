@@ -15,17 +15,17 @@
 
 <h4>Event Binding</h4>
 
-<button (click)="habilitatInput()">Habilitar</button>
-<button (click)="desabilitarInput()">Desabilitar</button>
+<button class="btnblue" (click)="habilitatInput()">Habilitar</button>
+<button class="btnblue" (click)="desabilitarInput()">Desabilitar</button>
 <!-- <button (click)="habilitatInput(true)">Habilitar</button>
 <button (click)="habilitatInput(false)">Desabilitar</button> -->
 <br><br>
-<button (click)="SenhaInput()">Senha</button>
-<button (click)="TextoInput()">Texto</button>
+<button class="btnblue" (click)="SenhaInput()">Senha</button>
+<button class="btnblue" (click)="TextoInput()">Texto</button>
 
 <h4>Atrubit Binding - alteraçao de atributo</h4>
 
-<button [attr.title]="buttonTitle">Teste</button>
+<button class="btnblue" [attr.title]="buttonTitle">Teste</button>
 
 
 
@@ -33,7 +33,19 @@
 retornar NULL ele ativa. -->
 <!-- se a propriedade for TRUE ele vai retornar true 
 se  buttonDisable for NULL o atributo [attr.disabled] não vai estar presente e vai ativar o botão -->
-<button [attr.disabled]="buttonDisable ? true : null">Disable</button>
+<button class="btnblue" [attr.disabled]="buttonDisable ? true : null">Disable</button>
 <br><br>
 <!--alterando estado dos botões-->
-<button (click)="onButtonClick()">Muda Prosp</button>
+<button class="btnblue" (click)="onButtonClick()">Muda Prosp</button>
+
+<h4>Alteraçao de propriedades cCSS no Angular</h4>
+
+<h5>Exemplo 1</h5>
+
+<button [style.width]="widthButton1" [style.backgroundColor]="'#bd6b73'">Botão 1</button>
+<br><br>
+<h5>Exemplo 5</h5>
+<button [style]="stylesObj">Botão 5</button>
+<br><br>
+<!-- <button (click)="updateStyleObj()">Atualiza obj</button> -->
+<!-- <button (click)="updateStyleObjCorrect()">Atualiza obj</button> -->
